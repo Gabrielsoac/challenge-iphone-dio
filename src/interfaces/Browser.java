@@ -2,6 +2,6 @@ package interfaces;
 
 public interface Browser {
 
-    void openBrowser(Browser browser);
-    void closeBrowser();
+    public void openBrowser();
+    public void closeBrowser();
 }

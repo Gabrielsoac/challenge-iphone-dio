@@ -1,12 +1,19 @@
 package entities;
 
-public abstract class iPhone {
+abstract class iPhone {
 
-    private String MAC;
-    private String model;
-    private Double RAM;
-    private Double storagement;
+    String MAC;
+    String model;
+    Double RAM;
+    Double storagement;
 
-    public void turnOn(){}
-    public void turnOff(){}
+    iPhone(String MAC, String model, Double RAM, Double storagement) {
+        this.MAC = MAC;
+        this.model = model;
+        this.RAM = RAM;
+        this.storagement = storagement;
+    }
+
+    abstract void turnOn();
+    abstract void turnOff();
 }

@@ -8,10 +8,7 @@ import java.util.List;
 
 public interface CellPhone {
 
-    Chip chip = new Chip();
-    List<Contact> contacts = new ArrayList<>();
-
-    void toCall(String number);
-    void inviteSMS(String number, String message);
+    public void toCall();
+    public void inviteSMS();
 
 }
