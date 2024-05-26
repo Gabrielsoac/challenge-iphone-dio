@@ -11,7 +11,7 @@ public interface CellPhone {
     Chip chip = new Chip();
     List<Contact> contacts = new ArrayList<>();
 
-    boolean toCall(String number);
-    boolean inviteSMS(String number, String message);
+    void toCall(String number);
+    void inviteSMS(String number, String message);
 
 }
